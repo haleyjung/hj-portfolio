@@ -211,11 +211,7 @@ export const experiencesData = [
       {
         id: 4,
         trait: "Self-starter"
-      },
-      {
-        id: 5,
-        trait: "Versatility"
-      },
+      }
     ],
   },
 ] as const;

@@ -95,7 +95,7 @@ const CodeSnippet= () => {
         <HighlightedCode code={staticActivitiesCodeSnippet} />
       </pre>
       <button
-        className="absolute top-2 right-2 px-3 py-1 text-sm bg-purple-400 text-gray-300 rounded-md hover:bg-purple-700 focus:outline-none focus:bg-purple-700  dark:bg-emerald-200/80 dark:text-gray-600 dark:hover:bg-emerald-200 dark:focus:bg-emerald-200"
+        className="absolute top-2 right-2 px-3 py-1 text-sm bg-purple-400 text-gray-300 rounded-md hover:bg-purple-700 focus:outline-none focus:bg-purple-700  dark:bg-emerald-200/80 dark:text-gray-600 dark:hover:bg-emerald-200 dark:focus:bg-emerald-200 hidden sm:inline-block"
         onClick={copyCodeToClipboard}
       >
         {copied ? 'Copied!' : 'Copy code'}

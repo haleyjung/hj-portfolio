@@ -33,12 +33,10 @@ export default function Contact() {
     >
       <SectionHeading>Let's talk!</SectionHeading>
 
-      <p className="text-gray-700 -mt-2 dark:text-white/80">
-        You can also find me on LinkedIn & GitHub
-      </p>
+      <p className="text-gray-700 -mt-2 dark:text-white/80">👇 Check out my LinkedIn & GitHub 👇</p>
 
       <motion.div
-        className="flex flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-row items-center justify-center gap-2 mt-5 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -63,7 +61,7 @@ export default function Contact() {
         </a>
       </motion.div>
 
-      <form
+      {/* <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
@@ -99,7 +97,7 @@ export default function Contact() {
           maxLength={5000}
         />
         <SubmitBtn />
-      </form>
+      </form> */}
     </motion.section>
   );
 }

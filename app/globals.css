@@ -3,25 +3,73 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --selection-background: #99f6e4;
+  --selection-color-light: #111827;
+  --selection-color-dark: #f472b6;
+  --highlight-background: #d9f99d;
+  --highlight-color-light: #f99dab;
+  --code-color-yellow: #fcd34d;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  --line-color: #e5e7eb;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--selection-background);
+}
+::-moz-selection {
+  background: var(--selection-background);
+}
+html.dark ::selection {
+  color: var(--selection-color-light);
+}
+html.dark ::-moz-selection {
+  color: var(--selection-color-light);
+}
+
+/* Text highlight styling */
+.textHighlight {
+  background-color: var(--highlight-background);
+  color: var(--highlight-color-light);
+  padding: 0.1rem 0.15rem 0.2rem 0.15rem;
+  font-weight: 500;
+}
+.dark .textHighlight {
+  background-color: var(--selection-color-dark);
+  color: var(--highlight-background);
+}
+
+/* Selection styling for text highlight */
+.textHighlight::selection {
+  background: rgba(249, 237, 189, 0.6);
+}
+
+.textHighlight::-moz-selection {
+  background: rgba(249, 237, 189, 0.6);
+}
+
+.dark .textHighlight::selection {
+  background: var(--selection-color-dark);
+  color: var(--highlight-background);
+}
+
+.dark .textHighlight::-moz-selection {
+  background: var(--selection-color-dark);
+  color: var(--highlight-background);
+}
+
+/* Other */
+.borderBlack {
+  @apply border border-black/10;
+}
+
+.codeSnippetDarkMode {
+  font-weight: 500;
+  color: var(--code-color-yellow);
 }

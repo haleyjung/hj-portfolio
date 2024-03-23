@@ -1,4 +1,4 @@
-# Haley's Portfolio
+# 🦄 Haley's Portfolio
 
 Welcome to my Portfolio repository! This repository contains the source code for my personal portfolio website, showcasing my projects, skills, and journey as a software engineer.
 
@@ -7,6 +7,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Live Demo
 
 You can view the live demo of the portfolio website [here](https://www.haleyjung.vercel.app).
+
+<img src='./public/portfolio-demo.gif' width="100%"  align="center"/>
 
 ## Features
 
@@ -23,11 +25,13 @@ You can view the live demo of the portfolio website [here](https://www.haleyjung
 
 ## Tech Stack
 
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>
-<img src="https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white"/>
-<img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat-square&logo=Tailwind CSS&logoColor=white"/>
-<img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white"/>
+<div style="display: flex; flex-wrap: wrap;">
+    <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black" alt="React badge"/>
+    <img src="https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white" alt="Typescript badge"/>
+    <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white" alt="Next.js badge"/>
+    <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat-square&logo=Tailwind CSS&logoColor=white" alt="Tailwind CSS badge"/>
+    <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white" alt="Vercel badge"/>
+</div>
 
 ## Installation and Usage
 

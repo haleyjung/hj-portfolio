@@ -1,21 +1,12 @@
-// const withBundleAnalyzer = require('@next/bundle-analyzer')({
-//   enabled: process.env.ANALYZE === 'true',
-// })
+// @ts-check
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "user-images.githubusercontent.com",
-      },
-    ],
-  },
-  experimental: {
-    serverActions: true,
-  },
+  compiler: {
+    removeConsole: {
+      exclude: ['error'],
+    },
+  }
 }
 
 module.exports = nextConfig
-// module.exports = withBundleAnalyzer(nextConfig)

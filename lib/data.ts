@@ -1,8 +1,8 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import bookfaceGif from "@/public/bookface.gif";
-import tagmeGif from "@/public/tagme.gif";
+import bookfaceGif from "@/public/bookface.png";
+import tagmeGif from "@/public/tagme.png";
 import { v4 } from "uuid";
 
 export const links = [
@@ -33,7 +33,7 @@ export const projectsData = [
     id: v4(),
     title: "BookFace",
     description:
-      "I worked as a full stack developer and PM on this social cataloging site, and built a real time group video chat and user's personalized pages with data visualization.",
+      "A social cataloging site with Firebase OAuth, live search, event hosting, group video chat, and personalized user pages with reading statistics.",
     imageUrl: bookfaceGif,
     githubUrl: "https://github.com/MarianTLibrarian/BookFace",
     tags: [
@@ -63,7 +63,7 @@ export const projectsData = [
     id: v4(),
     title: "TagMe",
     description:
-      "An iOS application that generates hashtags from photos by using Google Cloud Vision API's machine learning image analysis.",
+      "An iOS app that generates hashtags from user-uploaded photos using machine learning image analysis API and supporting offline data access.",
     imageUrl: tagmeGif,
     githubUrl: "https://github.com/haleyjung/TagMe",
     tags: [
@@ -126,7 +126,7 @@ export const experiencesData = [
       },
       {
         id: v4(),
-        trait: "Strategic-mided"
+        trait: "Strategic-minded"
       },
       {
         id: v4(),

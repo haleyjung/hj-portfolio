@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import Skills from "@/components/skills";
-import { motion } from "framer-motion";
+import { motion } from "@/lib/motionWrapper";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {

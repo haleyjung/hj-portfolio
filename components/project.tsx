@@ -1,9 +1,9 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { projectsData } from "@/lib/data";
 import { FaGithubSquare } from "react-icons/fa";
+import { projectsData } from "@/lib/data";
+import { motion, useScroll, useTransform } from "@/lib/motionWrapper";
 import dynamic from 'next/dynamic';
 
 type ProjectProps = (typeof projectsData)[number];

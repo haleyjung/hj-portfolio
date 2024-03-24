@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import SectionHeading from "./section-heading";
 import CodeSnippet from './code-snippet';
-import { motion } from "framer-motion";
+import { motion } from "@/lib/motionWrapper";
 import { heartEmojis, haleyActivities, recentLearnings } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 

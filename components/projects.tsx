@@ -5,7 +5,7 @@ import Project from "./project";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
+import { motion } from "@/lib/motionWrapper";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);

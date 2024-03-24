@@ -39,5 +39,11 @@
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.3",
     "@types/uuid": "^9.0.8"
+  },
+  "nextBundleAnalysis": {
+    "budget": null,
+    "budgetPercentIncreaseRed": 20,
+    "minimumChangeThreshold": 0,
+    "showDetails": true
   }
 }

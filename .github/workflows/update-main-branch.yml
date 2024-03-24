@@ -8,7 +8,12 @@ on:
 jobs:
   update_main:
     runs-on: ubuntu-latest
-      
+    steps:
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -19,6 +24,11 @@ jobs:
       - name: Set Git user name
         run: git config --global user.name "${{ secrets.GIT_USER_NAME }}"
 
+      - name: Print all branches
+        run: |
+          git fetch --all --quiet
+          git branch -r | grep -v '\->' | while read branch; do echo "${branch#origin/}"; done
+          
       - name: Merge prod into main
         run: |
           git checkout main

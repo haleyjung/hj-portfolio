@@ -8,8 +8,12 @@ on:
 jobs:
   update_main:
     runs-on: ubuntu-latest
-
     steps:
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
       - name: Checkout code
         uses: actions/checkout@v3
         
@@ -26,6 +30,6 @@ jobs:
           
       - name: Merge prod into main
         run: |
-          git checkout main
-          git merge --no-ff prod -m "Merge prod into main" --allow-unrelated-histories
+          git checkout main  # Switch to the main branch
+          git merge --no-ff prod -m "Merge prod into main" --allow-unrelated-histories -X theirs
           git push origin main

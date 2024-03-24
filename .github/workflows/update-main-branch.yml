@@ -31,5 +31,8 @@ jobs:
       - name: Merge prod into main
         run: |
           git checkout main
-          git merge --no-ff prod -m "Merge prod into main" --allow-unrelated-histories
+          git merge --no-ff prod \  # Merge the prod branch
+            -m "Merge prod into main" \  # Commit message
+            --allow-unrelated-histories \  # Allow unrelated histories
+            -X theirs  # Resolve conflicts by favoring changes from the prod branch
           git push origin main

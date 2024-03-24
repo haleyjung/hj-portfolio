@@ -48,6 +48,7 @@ export default function Contact() {
           className="mt-1 p-1 text-gray-700 hover:text-gray-950 flex items-center gap-2 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer dark:text-white/60"
           href="https://www.linkedin.com/in/junghaley/"
           target="_blank"
+          aria-label="LinkedIn: Haley Jung's Profile"
         >
           <BsLinkedin className="w-9 h-9"/>
         </a>
@@ -56,6 +57,7 @@ export default function Contact() {
           className="mt-1 p-1 text-gray-700 flex items-center gap-2 text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer dark:text-white/60"
           href="https://github.com/haleyjung"
           target="_blank"
+          aria-label="GitHub: Haley Jung's GitHub Profile"
         >
           <FaGithubSquare className="w-11 h-11"/>
         </a>

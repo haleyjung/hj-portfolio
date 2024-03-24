@@ -1,8 +1,8 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import bookfaceGif from "@/public/bookface.png";
-import tagmeGif from "@/public/tagme.png";
+import bookfaceGif from "@/public/bookface.webp";
+import tagmeGif from "@/public/tagme.webp";
 import { v4 } from "uuid";
 
 export const links = [

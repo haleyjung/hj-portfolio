@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Skills from "@/components/skills";
 import { useSectionInView } from "@/lib/hooks";
+import dynamic from 'next/dynamic';
+
+const DynamicImage = dynamic(() => import('next/image'), { loading: () => <p>Loading...</p> });
 
 export default function Intro() {
   const { ref } = useSectionInView("👋", 0.5);
@@ -36,8 +39,8 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image
-              src="/profile.png"
+            <DynamicImage
+              src="/profile.webp"
               alt="Profile image of Haley"
               width="300"
               height="300"

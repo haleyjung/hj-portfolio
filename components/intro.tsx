@@ -2,23 +2,12 @@
 
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
 import Skills from "@/components/skills";
+import { motion } from "@/lib/motionWrapper";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
   const { ref } = useSectionInView("👋", 0.5);
-
-  const introText = (
-    <>
-      <span className="font-bold gradient-to-r">Hi, I'm Haley!</span> I'm a{" "}
-      <span className="font-bold">full-stack developer</span> with{" "}
-      <span className="font-bold">2+ years</span> of experience. I love building{" "}
-      <span className="italic">web & mobile applications</span> using{" "}
-      <span className="underline">React</span>.
-    </>
-  );
 
   return (
     <section
@@ -37,7 +26,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://user-images.githubusercontent.com/73789849/163858022-12833d90-2177-47b8-9949-9997b4f453ca.PNG"
+              src="/profile.webp"
               alt="Profile image of Haley"
               width="300"
               height="300"
@@ -55,7 +44,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        {introText}
+        <span className="font-bold">Hi, I'm Haley!</span> I'm a{" "}
+        <span className="font-bold">full-stack developer</span> with{" "}
+        <span className="font-bold">2+ years</span> of experience. I love building{" "}
+        <span className="italic">web & mobile applications</span> using{" "}
+        <span className="underline">React</span>.
       </motion.h1>
       <Skills />
     </section>

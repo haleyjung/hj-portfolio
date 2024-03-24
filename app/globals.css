@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --selection-background: #99f6e4;
-  --selection-color-light: #111827;
-  --selection-color-dark: #f472b6;
-  --highlight-background: #d9f99d;
-  --highlight-color-light: #f99dab;
-  --code-color-yellow: #fcd34d;
+  --emerald: #99f6e4;
+  --lemon: #d9f99d;
+  --pink: #f472b6;
+  --rose: #f99dab;
+  --yellow: #fcd34d;
+  --sand: rgba(249, 237, 189, 0.6);
+  --gray-dark: #111827;
 }
 
 html {
@@ -21,47 +22,47 @@ html.dark {
 
 /* Selection styling */
 ::selection {
-  background: var(--selection-background);
+  background: var(--emerald);
 }
 ::-moz-selection {
-  background: var(--selection-background);
+  background: var(--emerald);
 }
 html.dark ::selection {
-  color: var(--selection-color-light);
+  color: var(--gray-dark);
 }
 html.dark ::-moz-selection {
-  color: var(--selection-color-light);
+  color: var(--gray-dark);
 }
 
 /* Text highlight styling */
 .textHighlight {
-  background-color: var(--highlight-background);
-  color: var(--highlight-color-light);
+  background-color: var(--lemon);
+  color: var(--rose);
   padding: 0.1rem 0.15rem 0.2rem 0.15rem;
   font-weight: 500;
 }
 .dark .textHighlight {
-  background-color: var(--selection-color-dark);
-  color: var(--highlight-background);
+  background-color: var(--pink);
+  color: var(--lemon);
 }
 
 /* Selection styling for text highlight */
 .textHighlight::selection {
-  background: rgba(249, 237, 189, 0.6);
+  background: var(--sand);
 }
 
 .textHighlight::-moz-selection {
-  background: rgba(249, 237, 189, 0.6);
+  background: var(--sand);
 }
 
 .dark .textHighlight::selection {
-  background: var(--selection-color-dark);
-  color: var(--highlight-background);
+  background: var(--pink);
+  color: var(--lemon);
 }
 
 .dark .textHighlight::-moz-selection {
-  background: var(--selection-color-dark);
-  color: var(--highlight-background);
+  background: var(--pink);
+  color: var(--lemon);
 }
 
 /* Other */
@@ -71,5 +72,5 @@ html.dark ::-moz-selection {
 
 .codeSnippetDarkMode {
   font-weight: 500;
-  color: var(--code-color-yellow);
+  color: var(--yellow);
 }

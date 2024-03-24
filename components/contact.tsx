@@ -2,13 +2,13 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
-import SubmitBtn from "./submit-btn";
-import toast from "react-hot-toast";
+import { motion } from "@/lib/motionWrapper";
+import { useSectionInView } from "@/lib/hooks";
+// import SubmitBtn from "./submit-btn";
+// import { sendEmail } from "@/actions/sendEmail";
+// import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -35,19 +35,13 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-2 dark:text-white/80">👇 Check out my LinkedIn & GitHub 👇</p>
 
-      <motion.div
-        className="flex flex-row items-center justify-center gap-2 mt-5 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
-      >
+      <div className="flex flex-row items-center justify-center gap-2 mt-5 px-4 text-lg font-medium">
 
         <a
           className="mt-1 p-1 text-gray-700 hover:text-gray-950 flex items-center gap-2 focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer dark:text-white/60"
           href="https://www.linkedin.com/in/junghaley/"
           target="_blank"
+          aria-label="LinkedIn: Haley Jung's Profile"
         >
           <BsLinkedin className="w-9 h-9"/>
         </a>
@@ -56,10 +50,11 @@ export default function Contact() {
           className="mt-1 p-1 text-gray-700 flex items-center gap-2 text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer dark:text-white/60"
           href="https://github.com/haleyjung"
           target="_blank"
+          aria-label="GitHub: Haley Jung's GitHub Profile"
         >
           <FaGithubSquare className="w-11 h-11"/>
         </a>
-      </motion.div>
+      </div>
 
       {/* <form
         className="mt-10 flex flex-col dark:text-black"

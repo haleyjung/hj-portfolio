@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring } from "@/lib/motionWrapper";
 
 export default function ScrollTracker() {
   const { scrollYProgress } = useScroll();

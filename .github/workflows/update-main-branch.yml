@@ -12,11 +12,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
+      - name: Set Git user email
+        run: git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
+    
+      - name: Set Git user name
+        run: git config --global user.name "${{ secrets.GIT_USER_NAME }}"
 
+      - name: Print all branches
+        run: |
+          git fetch --all --quiet
+          git branch -r | grep -v '\->' | while read branch; do echo "${branch#origin/}"; done
+          
       - name: Merge prod into main
         run: |
-          git config --global user.email "{{ secrets.GIT_USER_EMAIL }}"
-          git config --global user.name "{{ secrets.GIT_USER_NAME }}"
           git checkout main
           git merge --no-ff prod -m "Merge prod into main"
           git push origin main

@@ -93,7 +93,7 @@ export const experiencesData = [
     title: "BA in Visual and Critical Studies",
     location: "SAIC, Chicago",
     description:
-      "With an interest in Arts Business and Administration, I organized various events and exhibitions, each time finding myself instinctively drawn to building a website. I vividly recall crafting and deploying my first masterpiece in Grade 6 using Dreamweaver and Adobe Flash: a sharks database website with animated fishes. Little did I realize that this early passion would shape my career, blending my love for the arts with the boundless possibilities of the digital realm.",
+      "With an interest in Arts Business and Administration, 🎨 I organized various events and exhibitions, each time finding myself instinctively drawn to building a website. I vividly recall crafting and deploying my first masterpiece in Grade 6 using Dreamweaver and Adobe Flash: 🦈 a sharks database website with animated fishes 🐠. Little did I realize that this early passion would shape my career, blending my love for the arts with the boundless possibilities of the digital realm.",
     icon: React.createElement(LuGraduationCap),
     date: "2017",
     tags: [
@@ -116,7 +116,7 @@ export const experiencesData = [
     title: "Intern ➡️ Manager",
     location: "Almine Rech Gallery, New York",
     description:
-      "I spearheaded implementing new technologies to streamline product management workflows, encompassing database migration, web development, and API integrations for emails and QR code functionalities. Wearing multiple hats, I managed a diverse portfolio of products and projects, overseeing all aspects from defining objectives, planning, documenting, resource allocation to stakeholder collaboration, and quality assurance. When I was offered a senior leadership position, it propelled me to ponder where I see myself in the next 5 years, and I decided to pursue what I had been imagining - software engineering.",
+      "I spearheaded implementing new technologies to streamline product management workflows, encompassing database migration, web development, and API integrations for emails and QR code functionalities. 🎩 Wearing multiple hats, I managed a diverse portfolio of products and projects, overseeing all aspects from defining objectives, planning, documenting, resource allocation to stakeholder collaboration, and quality assurance. When I was offered a senior leadership position, it propelled me to ponder where I see myself in the next 5 years 🤔 and I decided to pursue software engineering.",
     icon: React.createElement(CgWorkAlt),
     date: "2017 - 2022",
     tags: [
@@ -147,7 +147,7 @@ export const experiencesData = [
     title: "Web Developer",
     location: "PnC, Remote - Korea",
     description:
-      "While employed full-time at the gallery during the day, I dedicated my evenings to web development, collaborating remotely with a B2B company in Korea. Taking the lead on early branding initiatives following a change in company ownership and a significant shift in business direction, I piloted the overhaul of the design system, from logo to website and technical documentation. I also developed reusable, modular UI components in React with JavaScrip for future application, playing a role in reshaping the company's digital footprint.",
+      "While employed full-time at the gallery during the day, I dedicated my evenings to web development, collaborating remotely with a B2B company in Korea. 📛 Taking the lead on their rebranding initiative, I piloted the overhaul of the design system, from logo to website architecture, modular UI components, and technical documentation.",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
     tags: [
@@ -170,7 +170,7 @@ export const experiencesData = [
     title: "Software Engineering Bootcamp",
     location: "Hack Reactor, Remote - New York",
     description:
-      "After concluding my tenure as a web developer at PnC, I successfully cleared a technical assessment to secure admission into Hack Reactor, a full-time software engineering bootcamp operating from Monday to Saturday. Subsequently departing from my role at the gallery, I completed an intensive 12-week bootcamp, focusing on full-stack development with React and React Native, alongside essential topics on data structures and algorithms.",
+      "After concluding my tenure as a web developer at PnC, I successfully secured admission into Hack Reactor, a full-time software engineering bootcamp operating from Monday to Saturday. Subsequently departing from my role at the gallery, I completed an intensive 12-week journey, 👩🏻‍💻📚 focusing on full-stack development with React, alongside essential topics on data structures and algorithms.",
     icon: React.createElement(LuGraduationCap),
     date: "2021-2022",
     tags: [
@@ -193,7 +193,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Strategic, Remote - New York",
     description:
-      "Shortly after graduating, I embarked on a new journey as a full-stack software engineer at a financial services company. Within my first 3 months, I designed and developed a test automation framework solution, resulting in a 95% reduction in testing and deployment time and saving over $10k in monthly cost previously spent on external tools. Collaborating with cross-functional teams, I contributed to the development and testing of various in-house React applications in both JavaScript and TypeScript, as well as backend APIs in NodeJS and C#. These projects included solutions for credit analysis, real-time presentations, and interactive voice response systems.",
+      "Shortly after graduating, I embarked on a new journey as a full-stack software engineer at a financial services company 👩🏻‍💻🏦. Within my first 3 months, I designed and developed a test automation framework solution, resulting in a 95% reduction in testing and deployment times and saving over $10k/month. Collaborating with cross-functional teams, 💻 ✅ I developed and tested various in-house React applications in both JavaScript and TypeScript, as well as backend APIs in Node.js and C#. These projects included solutions for credit analysis, real-time presentations, and interactive voice response system.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2024",
     tags: [

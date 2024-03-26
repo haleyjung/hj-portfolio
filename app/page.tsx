@@ -1,36 +1,14 @@
-// import About from "@/components/about";
-// import Contact from "@/components/contact";
-// import Experience from "@/components/experience";
 import Intro from "@/components/intro";
-// import Projects from "@/components/projects";
-// import ScrollTracker from "@/components/scroll-tracker";
-// import SectionDivider from "@/components/section-divider";
-
-// export default function Home() {
-//   return (
-//     <main className="flex flex-col items-center px-4">
-//       <ScrollTracker />
-//       <Intro />
-//       <SectionDivider />
-//       <About />
-//       <Projects />
-//       <Experience />
-//       <Contact />
-//     </main>
-//   );
-// }
-
 import dynamic from 'next/dynamic';
 import { useMemo } from 'react';
 
 // Lazy load components
-const About = dynamic(() => import('@/components/about'));
-const Contact = dynamic(() => import('@/components/contact'));
-const Experience = dynamic(() => import('@/components/experience'));
-// const Intro = dynamic(() => import('@/components/intro'));
-const Projects = dynamic(() => import('@/components/projects'));
 const ScrollTracker = dynamic(() => import('@/components/scroll-tracker'));
 const SectionDivider = dynamic(() => import('@/components/section-divider'));
+const About = dynamic(() => import('@/components/about'));
+const Projects = dynamic(() => import('@/components/projects'));
+const Experience = dynamic(() => import('@/components/experience'));
+const Contact = dynamic(() => import('@/components/contact'));
 
 function Home() {
   // Memoize components

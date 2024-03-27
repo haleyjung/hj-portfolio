@@ -13,7 +13,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Live Demo
 
-You can view the live demo of the portfolio website [here](https://www.haleyjung.vercel.app).
+You can view the live demo of the portfolio website [here](https://www.haleyjung.xyz).
 
 <img src='./public/portfolio-demo.gif' width="100%"  align="center"/>
 

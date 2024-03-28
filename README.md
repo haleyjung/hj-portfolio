@@ -13,14 +13,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Live Demo
 
-You can view the live demo of the portfolio website [here](https://www.haleyjung.vercel.app).
-
-<img src='./public/portfolio-demo.gif' width="100%"  align="center"/>
+You can view the live demo of the portfolio website at [haleyjung.xyz](https://www.haleyjung.xyz).
 
 ## Features
 
 - **Responsive Design**
-  - Fesigned to be fully responsive, ensuring optimal viewing experience across various devices and screen sizes.
+  - Designed to be fully responsive, ensuring optimal viewing experience across various devices and screen sizes.
 - **Dynamic Content**
   - Dynamic content sections such as project showcases, skills, and experiences, making it easy to navigate and explore.
 - **Interactive Elements**

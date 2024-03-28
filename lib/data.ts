@@ -63,7 +63,7 @@ export const projectsData = [
     id: v4(),
     title: "TagMe",
     description:
-      "An iOS app that generates hashtags from user-uploaded photos using machine learning image analysis API and supporting offline data access.",
+      "An iOS app that generates hashtags from user-uploaded photos using machine learning image analysis API and supports offline data access with Firebase.",
     imageUrl: tagmeGif,
     githubUrl: "https://github.com/haleyjung/TagMe",
     tags: [
@@ -116,7 +116,7 @@ export const experiencesData = [
     title: "Intern ➡️ Manager",
     location: "Almine Rech Gallery, New York",
     description:
-      "I spearheaded implementing new technologies to streamline product management workflows, encompassing database migration, web development, and API integrations for emails and QR code functionalities. 🎩 Wearing multiple hats, I managed a diverse portfolio of products and projects, overseeing all aspects from defining objectives, planning, documenting, resource allocation to stakeholder collaboration, and quality assurance. When I was offered a senior leadership position, it propelled me to ponder where I see myself in the next 5 years 🤔 and I decided to pursue software engineering.",
+      "I spearheaded implementing new technologies to streamline product management workflows, encompassing database migration, web development, and API integrations for emails and QR code functionalities. 🎩 Wearing multiple hats, I managed a diverse portfolio of products and projects, leading end-to-end processes including strategic roadmap development, stakeholder collaboration, resource allocation, and quality assurance oversight. When I was offered a senior leadership position, it propelled me to ponder where I see myself in the next 5 years 🤔 and I decided to pursue software engineering.",
     icon: React.createElement(CgWorkAlt),
     date: "2017 - 2022",
     tags: [
@@ -147,7 +147,7 @@ export const experiencesData = [
     title: "Web Developer",
     location: "PnC, Remote - Korea",
     description:
-      "While employed full-time at the gallery during the day, I dedicated my evenings to web development, collaborating remotely with a B2B company in Korea. 📛 Taking the lead on their rebranding initiative, I piloted the overhaul of the design system, from logo to website architecture, modular UI components, and technical documentation.",
+      "While employed full-time at the gallery during the day, I dedicated my evenings to web development, collaborating remotely with a B2B company in Korea. 🪄 Leading the rebranding initiative, I rearchitected the legacy site to include bilingual features and revamped the design system, resulting in a significant increase in user engagement metrics.",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
     tags: [
@@ -170,7 +170,7 @@ export const experiencesData = [
     title: "Software Engineering Bootcamp",
     location: "Hack Reactor, Remote - New York",
     description:
-      "After concluding my tenure as a web developer at PnC, I successfully secured admission into Hack Reactor, a full-time software engineering bootcamp operating from Monday to Saturday. Subsequently departing from my role at the gallery, I completed an intensive 12-week journey, 👩🏻‍💻📚 focusing on full-stack development with React, alongside essential topics on data structures and algorithms.",
+      "After concluding my tenure as a web developer at PnC, I successfully secured admission into Hack Reactor, a full-time software engineering bootcamp operating from Monday to Saturday. Subsequently departing from my role at the gallery, I completed 👩🏻‍💻📚 the intensive 12-week journey that focused on full-stack development with React, alongside essential topics on data structures and algorithms.",
     icon: React.createElement(LuGraduationCap),
     date: "2021-2022",
     tags: [
@@ -193,7 +193,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Strategic, Remote - New York",
     description:
-      "Shortly after graduating, I embarked on a new journey as a full-stack software engineer at a financial services company 👩🏻‍💻🏦. Within my first 3 months, I designed and developed a test automation framework solution, resulting in a 95% reduction in testing and deployment times and saving over $10k/month. Collaborating with cross-functional teams, 💻 ✅ I developed and tested various in-house React applications in both JavaScript and TypeScript, as well as backend APIs in Node.js and C#. These projects included solutions for credit analysis, real-time presentations, and interactive voice response system.",
+      "Shortly after graduating, I transitioned to a full-stack software engineer role at a financial services company 👩🏻‍💻🏦. Within my first 3 months, I spearheaded the implementation of a test automation framework with CI/CD pipeline. This initiative resulted in a 90% reduction in testing and deployment times, yielding a substantial cost savings by minimizing reliance on external tools. I also collaborated with cross-functional teams 💻 🧩  to develop innovative solutions for credit analysis and interactive voice system applications, playing a key role in migrating in-house React applications from JavaScript to TypeScript, and refining backend APIs in Node.js and C#.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2024",
     tags: [
@@ -218,26 +218,25 @@ export const experiencesData = [
 ] as const;
 
 export const skillsData = [
-  { id: v4(), name: "HTML" },
-  { id: v4(), name: "CSS" },
-  { id: v4(), name: "JavaScript" },
   { id: v4(), name: "TypeScript" },
+  { id: v4(), name: "JavaScript" },
   { id: v4(), name: "React" },
-  { id: v4(), name: "Next.js" },
-  { id: v4(), name: "Node.js" },
   { id: v4(), name: "Redux" },
   { id: v4(), name: "React Native" },
-  { id: v4(), name: "C#" },
-  { id: v4(), name: "Tailwind" },
+  { id: v4(), name: "Next.js" },
+  { id: v4(), name: "Tailwind CSS" },
+  { id: v4(), name: "Node.js" },
   { id: v4(), name: "Express" },
+  { id: v4(), name: "C#" },
+  { id: v4(), name: ".NET" },
   { id: v4(), name: "Redis" },
   { id: v4(), name: "GraphQL" },
-  { id: v4(), name: "MongoDB" },
   { id: v4(), name: "PostgreSQL" },
+  { id: v4(), name: "MongoDB" },
+  { id: v4(), name: "Selenium" },
   { id: v4(), name: "Git" },
   { id: v4(), name: "Azure" },
   { id: v4(), name: "AWS" },
-  { id: v4(), name: "CI/CD" },
 ] as const;
 
 export const haleyActivities = {
@@ -251,4 +250,4 @@ export const heartEmojis = [
   '❤️', '💖', '💝', '🫶', '💗', '💜', '💓', '💞', '💛', '💘'
 ] as const;
 
-export const recentLearnings = ['Next.js', 'three.js'] as const;
+export const recentLearnings = ['Next.js', 'Golang'] as const;

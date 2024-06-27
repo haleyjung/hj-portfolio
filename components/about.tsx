@@ -59,25 +59,15 @@ export default function About() {
     >
       <SectionHeading>My Story</SectionHeading>
       <p className="mb-3 ">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Visual and Critical Studies</span> in Chicago, I delved into my passion for programming by building {" "}
-        <span className="">websites for artist exhibitions</span>. After working as a {" "}
-        <span className="font-medium underline">Product Manager</span> {" "} and a {" "}
-        <span className="font-medium underline">Web Developer</span>, I aimed to further refine my expertise in {" "}
-        <span className="textHighlight">full-stack development</span> by enrolling in a software engineering bootcamp in 2022. {" "}
-        Embarking on a new chapter as a Software Engineer at a financial services firm upon graduation, I've broadened my skills to encompass {" "}
-        <span className="textHighlight">infrastructure management</span>, {" "}
-        <span className="textHighlight">automation</span>, {" "}
-        <span className="textHighlight">machine learning</span> and adoption of modern technology stacks like TypeScript for{" "}
-        <span className="textHighlight">application migration</span>. {" "}
+      My journey in software engineering began with building websites for curatorial projects, igniting my passion for blending creativity with technical skills to deliver scalable, secure and user-centric solutions.
       </p>
       <p className="">
         I {loopHeartEmojis()} the {" "}
           <span className="textHighlight">creative problem-solving</span> {" "} and {" "}
-          <span className="textHighlight">continuous learning</span> {" "} inherent in programming, and the{" "}
-          <span className="textHighlight">autonomy</span> {" "} to bring imaginative ideas to life alongside liked-minded peers. Always seeking fresh challenges, I thrive in {" "}
-          <span className="textHighlight">fast-paced</span>,{" "}
-          <span className="textHighlight">collaborative</span> settings.
+          <span className="textHighlight">continuous learning</span> {" "} of programming, and the {" "}
+          <span className="textHighlight">autonomy</span> {" "} to build what I imagine. I'm always looking to learn new technologies and apply them to fun projects. Recently, I've picked up {" "}
+          <span className="font-medium">{recentLearnings[0]}</span> and {" "}
+          <span className="font-medium">{recentLearnings[1]}</span>.
       </p>
       {animateActivities()}
       <CodeSnippet />

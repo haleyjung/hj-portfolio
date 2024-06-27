@@ -22,7 +22,7 @@ export default function Projects() {
         My projects
       </SectionHeading>
       <div>
-        <p className="text-center pb-10 text-gray-500">🚀 More coming soon!</p>
+        {/* <p className="text-center pb-10 text-gray-500">🚀 More coming soon!</p> */}
         {projectsData.map((project) => (
           <React.Fragment key={project.id}>
             <Project {...project} />

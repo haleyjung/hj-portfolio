@@ -45,8 +45,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         Hi, I'm Haley! As a{" "}
-        <span className="font-bold">full-stack developer</span> with over{" "}
-        <span className="font-bold">3 years</span> of experience, I bring a{" "}
+        <span className="font-bold">full-stack developer</span> with a{" "}
         <span className="italic">growth</span> mindset and{" "}
         <span className="italic">collaborative</span> approach to building a{" "}
         <span className="underline">scalable</span> &{" "}

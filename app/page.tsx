@@ -26,7 +26,7 @@ import { useMemo } from 'react';
 // Lazy load components
 const About = dynamic(() => import('@/components/about'));
 const Contact = dynamic(() => import('@/components/contact'));
-const Experience = dynamic(() => import('@/components/experience'));
+// const Experience = dynamic(() => import('@/components/experience'));
 // const Intro = dynamic(() => import('@/components/intro'));
 const Projects = dynamic(() => import('@/components/projects'));
 const ScrollTracker = dynamic(() => import('@/components/scroll-tracker'));
@@ -37,7 +37,7 @@ function Home() {
   const MemoizedIntro = useMemo(() => <Intro />, []);
   const MemoizedAbout = useMemo(() => <About />, []);
   const MemoizedProjects = useMemo(() => <Projects />, []);
-  const MemoizedExperience = useMemo(() => <Experience />, []);
+  // const MemoizedExperience = useMemo(() => <Experience />, []);
   const MemoizedContact = useMemo(() => <Contact />, []);
 
   return (
@@ -47,7 +47,7 @@ function Home() {
       <SectionDivider />
       {MemoizedAbout}
       {MemoizedProjects}
-      {MemoizedExperience}
+      {/* {MemoizedExperience} */}
       {MemoizedContact}
     </main>
   );

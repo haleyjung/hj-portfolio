@@ -64,10 +64,10 @@ export default function About() {
       <p className="">
         I {loopHeartEmojis()} the {" "}
           <span className="textHighlight">creative problem-solving</span> {" "} and {" "}
-          <span className="textHighlight">continuous learning</span> {" "} inherent in programming, and the{" "}
-          <span className="textHighlight">autonomy</span> {" "} to bring imaginative ideas to life alongside liked-minded peers. Always seeking fresh challenges, I thrive in {" "}
-          <span className="textHighlight">fast-paced</span>,{" "}
-          <span className="textHighlight">collaborative</span> settings.
+          <span className="textHighlight">continuous learning</span> {" "} of programming, and the {" "}
+          <span className="textHighlight">autonomy</span> {" "} to build what I imagine. I'm always looking to learn new technologies and apply them to fun projects. Recently, I've picked up {" "}
+          <span className="font-medium">{recentLearnings[0]}</span> and {" "}
+          <span className="font-medium">{recentLearnings[1]}</span>.
       </p>
       {animateActivities()}
       <CodeSnippet />

@@ -59,7 +59,7 @@ export default function About() {
     >
       <SectionHeading>My Story</SectionHeading>
       <p className="mb-3 ">
-      My journey in software engineering began with building websites for curatorial projects, igniting my passion for blending creativity with technical skills to deliver scalable, secure and user-centric solutions.
+       My journey in software engineering began with building websites for curatorial projects, igniting my passion for blending creativity with technical skills to deliver scalable, secure and user-centric solutions.
         I {loopHeartEmojis()} the {" "}
           <span className="textHighlight">creative problem-solving</span> {" "} and {" "}
           <span className="textHighlight">continuous learning</span> {" "} of programming, and the {" "}

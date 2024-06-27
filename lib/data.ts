@@ -124,4 +124,4 @@ export const heartEmojis = [
   '❤️', '💖', '💝', '🫶', '💗', '💜', '💓', '💞', '💛', '💘'
 ] as const;
 
-export const recentLearnings = ['Next.js', 'Golang'] as const;
+// export const recentLearnings = ['Next.js', 'Golang'] as const;

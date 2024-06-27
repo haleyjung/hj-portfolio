@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import SectionHeading from "./section-heading";
 import CodeSnippet from './code-snippet';
 import { motion } from "@/lib/motionWrapper";
-import { heartEmojis, haleyActivities, recentLearnings } from "@/lib/data";
+import { heartEmojis, haleyActivities } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 
 type ActivityKey = 'A' | 'B' | 'C' | 'D';
@@ -60,14 +60,10 @@ export default function About() {
       <SectionHeading>My Story</SectionHeading>
       <p className="mb-3 ">
       My journey in software engineering began with building websites for curatorial projects, igniting my passion for blending creativity with technical skills to deliver scalable, secure and user-centric solutions.
-      </p>
-      <p className="">
         I {loopHeartEmojis()} the {" "}
           <span className="textHighlight">creative problem-solving</span> {" "} and {" "}
           <span className="textHighlight">continuous learning</span> {" "} of programming, and the {" "}
-          <span className="textHighlight">autonomy</span> {" "} to build what I imagine. I'm always looking to learn new technologies and apply them to fun projects. Recently, I've picked up {" "}
-          <span className="font-medium">{recentLearnings[0]}</span> and {" "}
-          <span className="font-medium">{recentLearnings[1]}</span>.
+          <span className="textHighlight">autonomy</span> {" "} to build what I imagine.
       </p>
       {animateActivities()}
       <CodeSnippet />

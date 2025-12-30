@@ -2,11 +2,18 @@
 
 import { useRef } from "react";
 import { FaGithubSquare } from "react-icons/fa";
-import { projectsData } from "@/lib/data";
+// import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "@/lib/motionWrapper";
 import dynamic from 'next/dynamic';
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: Array<{ id: string; stack: string }>;
+  imageUrl: any;
+  githubUrl: string;
+};
+// type ProjectProps = (typeof projectsData)[number];
 
 const DynamicImage = dynamic(() => import('next/image'), { loading: () => <p>Loading...</p> });
 

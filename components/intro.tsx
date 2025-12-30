@@ -44,12 +44,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi, I'm Haley! A{" "}
-        <span className="font-bold">full-stack developer</span> with a{" "}
-        <span className="italic">growth</span> mindset and{" "}
-        <span className="italic">collaborative</span> approach to building a{" "}
-        <span className="underline">scalable</span> &{" "}
-        <span className="underline">user-centric</span> solutions.
+        Hi, I'm Haley! I build clear, reliable financial systems with precision and care.
       </motion.h1>
       <Skills />
     </section>

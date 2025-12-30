@@ -28,7 +28,7 @@ const About = dynamic(() => import('@/components/about'));
 const Contact = dynamic(() => import('@/components/contact'));
 // const Experience = dynamic(() => import('@/components/experience'));
 // const Intro = dynamic(() => import('@/components/intro'));
-const Projects = dynamic(() => import('@/components/projects'));
+// const Projects = dynamic(() => import('@/components/projects'));
 const ScrollTracker = dynamic(() => import('@/components/scroll-tracker'));
 const SectionDivider = dynamic(() => import('@/components/section-divider'));
 
@@ -36,7 +36,7 @@ function Home() {
   // Memoize components
   const MemoizedIntro = useMemo(() => <Intro />, []);
   const MemoizedAbout = useMemo(() => <About />, []);
-  const MemoizedProjects = useMemo(() => <Projects />, []);
+  // const MemoizedProjects = useMemo(() => <Projects />, []);
   // const MemoizedExperience = useMemo(() => <Experience />, []);
   const MemoizedContact = useMemo(() => <Contact />, []);
 
@@ -46,7 +46,7 @@ function Home() {
       {MemoizedIntro}
       <SectionDivider />
       {MemoizedAbout}
-      {MemoizedProjects}
+      {/* {MemoizedProjects} */}
       {/* {MemoizedExperience} */}
       {MemoizedContact}
     </main>

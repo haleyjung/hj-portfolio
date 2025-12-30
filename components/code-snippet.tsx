@@ -11,7 +11,7 @@ type Highlight = {
   className: string;
 }
 
-const staticActivitiesCodeSnippet: string = `const haleyActivities = {
+const staticActivitiesCodeSnippet: string = `const activities = {
   A: 'drinking coffee',
   B: 'walking my dog',
   C: 'playing video games',
@@ -20,7 +20,7 @@ const staticActivitiesCodeSnippet: string = `const haleyActivities = {
 
 const HighlightedCode = ({ code }: CodeSnippetProps) => {
   const highlights: Highlight[] = [
-    { word: 'haleyActivities', className: 'text-rose-600 dark:text-pink-400' },
+    { word: 'activities', className: 'text-rose-600 dark:text-pink-400' },
     { word: "'drinking coffee'", className: 'text-amber-500 dark:text-yellow-200' },
     { word: "'walking my dog'", className: 'text-amber-500 dark:text-yellow-200' },
     { word: "'playing video games'", className: 'text-amber-500 dark:text-yellow-200' },

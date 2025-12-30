@@ -2,16 +2,16 @@
 
 import React, { useEffect, useState } from "react";
 import SectionHeading from "./section-heading";
-import CodeSnippet from './code-snippet';
+// import CodeSnippet from './code-snippet';
 import { motion } from "@/lib/motionWrapper";
 import { heartEmojis, haleyActivities } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 
 type ActivityKey = 'A' | 'B' | 'C' | 'D';
 
-type haleyActivitiesType = {
-  [key in ActivityKey]: string;
-};
+// type haleyActivitiesType = {
+//   [key in ActivityKey]: string;
+// };
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -41,7 +41,7 @@ export default function About() {
     const activity = haleyActivities[activityKey];
     return (
       <p>
-        When I'm not coding, <br/>
+        When I'm not coding, <br />
         I'm most likely {" "}
         <span className="font-medium text-gray-800 dark:text-pink-400">{activity}</span>
       </p>
@@ -59,14 +59,10 @@ export default function About() {
     >
       <SectionHeading>My Story</SectionHeading>
       <p className="mb-3 ">
-       My journey in software engineering began with building websites for curatorial projects, igniting my passion for blending creativity with technical skills to deliver scalable, secure and user-centric solutions.
-        I {loopHeartEmojis()} the {" "}
-          <span className="textHighlight">creative problem-solving</span> {" "} and {" "}
-          <span className="textHighlight">continuous learning</span> {" "} of programming, and the {" "}
-          <span className="textHighlight">autonomy</span> {" "} to build what I imagine.
+        Before moving into tech, I worked in curatorial practice, where shaping exhibitions demanded narrative thinking, financial fluency, and the ability to work fluidly across disciplines. Navigating budgets, stakeholders, and high-pressure moments taught me how to stay clear under pressure and move complex, multi-stakeholder projects forward with both empathy and precision—an approach that continues to shape how I approach engineering today.
       </p>
       {animateActivities()}
-      <CodeSnippet />
+      {/* <CodeSnippet /> */}
     </motion.section>
   );
 }
